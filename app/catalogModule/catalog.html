@@ -1,0 +1,14 @@
+<h1>Catalog</h1>
+<h2>Lots of items</h2>
+<div ng-repeat="item in cc.items">
+  <div>
+    <h3>{{item.gsx$title.$t}}</h3>
+    <i>{{item.gsx$description.$t}}</i>
+  </div>
+</div>
+
+<ul>
+  <li><a ui-sref="home" ui-sref-active="active">Home</a></li>
+  <li><a ui-sref="donors" ui-sref-active="active">Donors</a>
+    <li><a ui-sref="donation" ui-sref-active="active">Donation</a>
+</ul>

@@ -1,0 +1,43 @@
+<h1>Donate an Item to the Auction</h1>
+<form>
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email" required>
+  </div>
+  <div class="form-group">
+    <label for="title">Title:</label>
+    <input type="text" class="form-control" id="title">
+  </div>
+  <div class="form-group">
+    <label for="description">Description:</label>
+    <input type="text" class="form-control" id="description">
+  </div>
+  <div class="form-group">
+    <label for="number">Number Offered:</label>
+    <input type="number" class="form-control" min="1" step="1" value="1" id="number">
+  </div>
+  <div class="form-group">
+    <div class="row">
+    <div class="col-xs-12">
+      <label for="is_offered">Offered Per:</label>
+      <div class="btn-group btn-group-vertical" data-toggle="buttons">
+        <label class="btn active">
+          <input type="radio" name='is_offered' value='per_person' checked><span>Per Person</span>
+        </label>
+        <label class="btn">
+          <input type="radio" name='is_offered' value='per_event'><span>Per Service / Event</span>
+        </label>
+      </div>
+
+    </div>
+  </div>
+  </div>
+  <button type="submit" class="btn btn-default" ng-submit="doc.donate">Submit</button>
+</form>
+
+
+
+<ul>
+  <li><a ui-sref="home" ui-sref-active="active">Home</a></li>
+  <li><a ui-sref="catalog" ui-sref-active="active">Catalog</a></li>
+</ul>
